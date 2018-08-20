@@ -1,0 +1,12 @@
+<hr>
+<label>User Name:</label>
+<input type="text"
+  class="form-control"
+  (input)="onUpdateUserName($event)"
+  [(ngModel)]="userName">
+<br>
+<p>I'm Typing With You: {{ userName }}</p>
+<br>
+<button class="btn btn-danger"
+  [disabled]="!userName"
+  (click)="resetUserName()">Try Clicking Me!</button>
